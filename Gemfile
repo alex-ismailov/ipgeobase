@@ -11,11 +11,10 @@ gem "minitest", "~> 5.0"
 
 gem "rubocop", "~> 1.21"
 
-gem 'faraday'
-gem 'nokogiri-happymapper', require: 'happymapper'
+gem "faraday"
+gem "nokogiri-happymapper", require: "happymapper"
 
 group :test do
+  gem "simplecov", require: false
   gem "webmock"
-  gem 'simplecov', require: false
 end
-

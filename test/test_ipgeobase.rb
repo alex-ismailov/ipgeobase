@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'test_helper'
-require 'webmock/minitest'
-require 'simplecov'
+require_relative "test_helper"
+require "webmock/minitest"
+require "simplecov"
 
 SimpleCov.start
 
