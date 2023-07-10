@@ -15,8 +15,8 @@ module Ipgeobase
 
   def self.lookup(ip = "")
     uri_string = "#{PATH}/#{ip}"
-    uri = Addressable::URI.parse(PATH)
-    response = Faraday.get(uri_string)
+    uri = Addressable::URI.parse(uri_string)
+    response = Faraday.get(uri)
     xml_data = response.body
     HappyMapper.parse(xml_data)
   end
